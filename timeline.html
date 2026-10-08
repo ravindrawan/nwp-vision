@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Journey | Tikiri Ravindra Wanninayake</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            width: 2px;
+            background: linear-gradient(180deg, #3B82F6 0%, #10B981 50%, #8B5CF6 100%);
+        }
+        @media (min-width: 768px) {
+            .timeline-line::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen p-4 md:p-8">
+    <div class="max-w-5xl mx-auto space-y-8">
+        
+        <!-- Header Section -->
+        <header class="flex flex-col md:flex-row justify-between items-center border-b border-slate-800 pb-6 gap-4">
+            <div>
+                <a href="index.html" class="inline-flex items-center gap-2 text-cyan-400 text-xs font-semibold hover:underline mb-2">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Vision 2030 Roadmap
+                </a>
+                <h1 class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                    Public Service & Innovation Journey
+                </h1>
+                <p class="text-slate-400 text-sm mt-1">
+                    <strong>Tikiri Ravindra Wanninayake</strong> | 25+ Years of Dedicated Public Sector Digital Transformation
+                </p>
+            </div>
+            <a href="index.html" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-cyan-400 border border-slate-700 rounded-lg text-xs font-bold transition">
+                <i class="fa-solid fa-cube"></i> View 3D Vision
+            </a>
+        </header>
 
+        <!-- Executive Summary Highlights -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="glass-card p-4 rounded-xl border-l-4 border-l-blue-500">
+                <span class="text-xs text-slate-400 block uppercase">Experience</span>
+                <span class="text-xl font-extrabold text-white">25+ Years</span>
+                <span class="text-[10px] text-slate-400 block mt-1">Since 1999 Entry</span>
+            </div>
+            <div class="glass-card p-4 rounded-xl border-l-4 border-l-emerald-500">
+                <span class="text-xs text-slate-400 block uppercase">Role</span>
+                <span class="text-xl font-extrabold text-white">Digital Lead</span>
+                <span class="text-[10px] text-slate-400 block mt-1">NW Provincial Council</span>
+            </div>
+            <div class="glass-card p-4 rounded-xl border-l-4 border-l-amber-500">
+                <span class="text-xs text-slate-400 block uppercase">Pioneering</span>
+                <span class="text-xl font-extrabold text-white">csnwp.lk</span>
+                <span class="text-[10px] text-slate-400 block mt-1">1st NWP Web Portal & LGN 1.0</span>
+            </div>
+            <div class="glass-card p-4 rounded-xl border-l-4 border-l-purple-500">
+                <span class="text-xs text-slate-400 block uppercase">Global Training</span>
+                <span class="text-xl font-extrabold text-white">India & China</span>
+                <span class="text-[10px] text-slate-400 block mt-1">5G/Networks & Ubuntu OS</span>
+            </div>
+        </div>
+
+        <!-- Timeline Container -->
+        <div class="relative timeline-line space-y-8 my-8">
+
+            <!-- 1980s Era -->
+            <div class="relative flex flex-col md:flex-row items-center gap-6">
+                <div class="md:w-1/2 md:text-right w-full pl-12 md:pl-0">
+                    <div class="glass-card p-5 rounded-2xl border border-blue-500/20 hover:border-blue-500/50 transition">
+                        <span class="px-2.5 py-0.5 bg-blue-500/20 text-blue-400 rounded-full text-xs font-bold uppercase tracking-wider">1980s Era</span>
+                        <h3 class="text-lg font-bold text-white mt-2">The Spark of Curiosity & Electronics Mastery</h3>
+                        <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                            Fascinated by circuit mechanics behind festival pandals (Flasher units). Self-taught fundamentals of electricity under parental mentorship. Built an LED Multiplication Table project, winning 1st Place at Abanpola Central College Science Exhibition & earned the title <em>"Electronic Ravi"</em>.
+                        </p>
+                    </div>
+                </div>
+                <div class="absolute left-5 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-blue-600 border-4 border-slate-950 flex items-center justify-center text-xs font-bold text-white">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <div class="md:w-1/2 hidden md:block"></div>
+            </div>
+
+            <!-- 1990s Era -->
+            <div class="relative flex flex-col md:flex-row items-center gap-6">
+                <div class="md:w-1/2 hidden md:block"></div>
+                <div class="absolute left-5 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-emerald-600 border-4 border-slate-950 flex items-center justify-center text-xs font-bold text-white">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="md:w-1/2 w-full pl-12 md:pl-0">
+                    <div class="glass-card p-5 rounded-2xl border border-emerald-500/20 hover:border-emerald-500/50 transition">
+                        <span class="px-2.5 py-0.5 bg-emerald-500/20 text-emerald-400 rounded-full text-xs font-bold uppercase tracking-wider">1990s Era</span>
+                        <h3 class="text-lg font-bold text-white mt-2">Programming & Entry to Public Service</h3>
+                        <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                            Advanced into software development via GW BASIC at St. Anne's College. Awarded full scholarship for Software Engineering Diploma at TEC Sri Lanka. Entered Public Service in late 90s as Data Entry Operator at NW Chief Ministry with top exam score, balancing service with music band leadership and audio engineering.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2000s Era -->
+            <div class="relative flex flex-col md:flex-row items-center gap-6">
+                <div class="md:w-1/2 md:text-right w-full pl-12 md:pl-0">
+                    <div class="glass-card p-5 rounded-2xl border border-amber-500/20 hover:border-amber-500/50 transition">
+                        <span class="px-2.5 py-0.5 bg-amber-500/20 text-amber-400 rounded-full text-xs font-bold uppercase tracking-wider">2000s Era</span>
+                        <h3 class="text-lg font-bold text-white mt-2">Systems Innovation & Public Sector Software</h3>
+                        <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                            Developed and donated <strong>'TPSoft'</strong> standalone telephone directory software. Built critical software solutions for Early Childhood Development Authority & Community Water Supply Project (evaluated by US delegation). Promoted to <strong>Computer Program Analyst</strong> at Chief Secretariat. Initiated province-wide Hardware & Networking training workshops for officers.
+                        </p>
+                    </div>
+                </div>
+                <div class="absolute left-5 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-amber-600 border-4 border-slate-950 flex items-center justify-center text-xs font-bold text-white">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <div class="md:w-1/2 hidden md:block"></div>
+            </div>
+
+            <!-- 2010s Era -->
+            <div class="relative flex flex-col md:flex-row items-center gap-6">
+                <div class="md:w-1/2 hidden md:block"></div>
+                <div class="absolute left-5 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-purple-600 border-4 border-slate-950 flex items-center justify-center text-xs font-bold text-white">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="md:w-1/2 w-full pl-12 md:pl-0">
+                    <div class="glass-card p-5 rounded-2xl border border-purple-500/20 hover:border-purple-500/50 transition">
+                        <span class="px-2.5 py-0.5 bg-purple-500/20 text-purple-400 rounded-full text-xs font-bold uppercase tracking-wider">2010s Era</span>
+                        <h3 class="text-lg font-bold text-white mt-2">Pioneering Web, Fiber & International Exposure</h3>
+                        <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                            Secured first ADSL line in NW Province & launched official provincial portal (<span class="text-purple-300">csnwp.lk</span>). Volunteer System Admin for Lanka Government Network (LGN 1.0). Led FTTH Migration Feasibility Project in 2014/15. Completed advanced training at <strong>MTNL Mumbai, India</strong> (Next-Gen Networks/5G) and <strong>Shenzhen, China</strong> (Ubuntu Keyling OS).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2020s Era -->
+            <div class="relative flex flex-col md:flex-row items-center gap-6">
+                <div class="md:w-1/2 md:text-right w-full pl-12 md:pl-0">
+                    <div class="glass-card p-5 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/50 transition">
+                        <span class="px-2.5 py-0.5 bg-cyan-500/20 text-cyan-400 rounded-full text-xs font-bold uppercase tracking-wider">2020s Present</span>
+                        <h3 class="text-lg font-bold text-white mt-2">Digital Unit Leadership, Cloud & AI Automation</h3>
+                        <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                            Established and leading the official <strong>Digital Division & GIS Unit</strong> (10 Officers). Deployed Centralized Containerized Cloud Infrastructure (Red Hat OpenShift, MySQL, PHP/Bootstrap). Coaching staff on AI Tools for software engineering and automated workflow generation.
+                        </p>
+                    </div>
+                </div>
+                <div class="absolute left-5 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-cyan-600 border-4 border-slate-950 flex items-center justify-center text-xs font-bold text-white">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <div class="md:w-1/2 hidden md:block"></div>
+            </div>
+
+        </div>
+
+        <!-- Footer / Navigation Back -->
+        <footer class="text-center pt-6 border-t border-slate-800">
+            <p class="text-xs text-slate-400 mb-4">Ready to see how this experience powers the future of NWP?</p>
+            <a href="index.html" class="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-xs font-bold rounded-xl shadow-lg hover:opacity-90 transition">
+                <i class="fa-solid fa-cube"></i> Return to 3D Vision & Roadmap 2030
+            </a>
+        </footer>
+
+    </div>
+</body>
+</html>
