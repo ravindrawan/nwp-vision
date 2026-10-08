@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision 2030: Fully Digitalized North Western Province</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @keyframes rotatePyramid {
+            0% { transform: rotateY(0deg) rotateX(10deg); }
+            100% { transform: rotateY(360deg) rotateX(10deg); }
+        }
+        .pyramid-container {
+            perspective: 1000px;
+            height: 260px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pyramid {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            transform-style: preserve-3d;
+            animation: rotatePyramid 20s infinite linear;
+        }
+        .side {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 80px solid transparent;
+            border-right: 80px solid transparent;
+            border-bottom: 140px solid;
+            opacity: 0.85;
+            transform-origin: 50% 100%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .side-1 { border-bottom-color: #3B82F6; transform: rotateY(0deg) translateZ(46px) rotateX(30deg); }
+        .side-2 { border-bottom-color: #10B981; transform: rotateY(90deg) translateZ(46px) rotateX(30deg); }
+        .side-3 { border-bottom-color: #F59E0B; transform: rotateY(180deg) translateZ(46px) rotateX(30deg); }
+        .side-4 { border-bottom-color: #8B5CF6; transform: rotateY(270deg) translateZ(46px) rotateX(30deg); }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen p-4 md:p-8">
+    <div class="max-w-5xl mx-auto space-y-8">
+        
+        <!-- Header -->
+        <header class="text-center space-y-3 border-b border-slate-800 pb-6">
+            <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-semibold uppercase tracking-wider">
+                PIC-NET Candidate Vision Document
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
+                Fully Digitalized NWP 2030 Roadmap
+            </h1>
+            <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base">
+                Presented by <strong>Tikiri Ravindra Wanninayake</strong> | 25+ Years of Service Innovation in Public Sector Technology
+            </p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- 3D Pyramid Graphic Section -->
+            <div class="lg:col-span-5 flex flex-col items-center justify-center glass-card p-6 rounded-2xl shadow-2xl relative overflow-hidden">
+                <h3 class="text-lg font-bold text-cyan-400 mb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-cubes"></i> Strategic Innovation Pyramid
+                </h3>
+                <p class="text-xs text-slate-400 text-center mb-6">4 Layered Pillars of Digital Transformation</p>
+                
+                <div class="pyramid-container">
+                    <div class="pyramid">
+                        <div class="side side-1"></div>
+                        <div class="side side-2"></div>
+                        <div class="side side-3"></div>
+                        <div class="side side-4"></div>
+                    </div>
+                </div>
+
+                <div class="mt-6 grid grid-cols-2 gap-2 text-xs w-full">
+                    <div class="flex items-center gap-2 bg-blue-500/10 p-2 rounded border border-blue-500/30">
+                        <span class="w-3 h-3 bg-blue-500 rounded-full"></span> Tier 4: Next-Gen AR
+                    </div>
+                    <div class="flex items-center gap-2 bg-emerald-500/10 p-2 rounded border border-emerald-500/30">
+                        <span class="w-3 h-3 bg-emerald-500 rounded-full"></span> Tier 3: NWP ERP
+                    </div>
+                    <div class="flex items-center gap-2 bg-amber-500/10 p-2 rounded border border-amber-500/30">
+                        <span class="w-3 h-3 bg-amber-500 rounded-full"></span> Tier 2: Cloud & HW
+                    </div>
+                    <div class="flex items-center gap-2 bg-purple-500/10 p-2 rounded border border-purple-500/30">
+                        <span class="w-3 h-3 bg-purple-500 rounded-full"></span> Tier 1: Legacy
+                    </div>
+                </div>
+            </div>
+
+            <!-- Career Summary & Vision Details -->
+            <div class="lg:col-span-7 space-y-4">
+                
+                <!-- Professional Journey Summary -->
+                <div class="glass-card p-5 rounded-xl space-y-2 border-l-4 border-l-cyan-500">
+                    <h3 class="text-md font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-user-gear text-cyan-400"></i> Executive Career Summary (1999 - Present)
+                    </h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Started as Data Entry Operator in 1999, evolved into Computer Program Analyst and Digital Unit Lead. Pioneer of NWP’s first ADSL connection, official portal (<span class="text-cyan-300">csnwp.lk</span>), LGN 1.0 architecture, OpenShift Containerized Cloud Infrastructure, and AI-driven automation workflows.
+                    </p>
+                </div>
+
+                <!-- 4 Tier Roadmap -->
+                <div class="space-y-3">
+                    
+                    <!-- Tier 4 -->
+                    <div class="bg-gradient-to-r from-blue-900/40 to-slate-900 p-4 rounded-xl border border-blue-500/30">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs font-bold text-blue-400 uppercase tracking-wide">Level 04 | Next-Gen Interaction</span>
+                            <span class="text-xs bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded">2028 - 2030</span>
+                        </div>
+                        <h4 class="font-bold text-white text-sm">Futuristic AR & Spatial Interface</h4>
+                        <p class="text-xs text-slate-400 mt-1">Applying for civic services via Smart AR Glasses, virtual helpdesks, and AI voice automation for hands-free public service delivery.</p>
+                    </div>
+
+                    <!-- Tier 3 -->
+                    <div class="bg-gradient-to-r from-emerald-900/40 to-slate-900 p-4 rounded-xl border border-emerald-500/30">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wide">Level 03 | Integrated Platform</span>
+                            <span class="text-xs bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded">2026 - 2027</span>
+                        </div>
+                        <h4 class="font-bold text-white text-sm">Unified Citizen Portal & In-House NWP-ERP</h4>
+                        <p class="text-xs text-slate-400 mt-1">Integrating all provincial services into a single portal, backed by a custom-built enterprise resource planning (ERP) system to eliminate redundancies.</p>
+                    </div>
+
+                    <!-- Tier 2 -->
+                    <div class="bg-gradient-to-r from-amber-900/40 to-slate-900 p-4 rounded-xl border border-amber-500/30">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs font-bold text-amber-400 uppercase tracking-wide">Level 02 | Infrastructure</span>
+                            <span class="text-xs bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded">Current / Active</span>
+                        </div>
+                        <h4 class="font-bold text-white text-sm">Centralized Cloud Infrastructure & Custom Hardware</h4>
+                        <p class="text-xs text-slate-400 mt-1">Deploying OpenShift Container Cloud platforms, FTTH network architecture, automated helpdesk, and optimized hardware specs.</p>
+                    </div>
+
+                    <!-- Tier 1 -->
+                    <div class="bg-gradient-to-r from-purple-900/40 to-slate-900 p-4 rounded-xl border border-purple-500/30">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs font-bold text-purple-400 uppercase tracking-wide">Level 01 | Foundation</span>
+                            <span class="text-xs bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded">1999 - 2020</span>
+                        </div>
+                        <h4 class="font-bold text-white text-sm">Core Technical Foundation & Skill Development</h4>
+                        <p class="text-xs text-slate-400 mt-1">Electronics, network engineering, custom PHP/MySQL standalone software (TPSoft), and widespread staff IT capacity building.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Strategic Outcomes -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-slate-800 pt-6">
+            <div class="glass-card p-4 rounded-xl text-center">
+                <i class="fa-solid fa-bolt text-amber-400 text-2xl mb-2"></i>
+                <h5 class="font-bold text-sm text-white">80% Workload Reduction</h5>
+                <p class="text-xs text-slate-400 mt-1">Automating routine support requests via automated Ticketing & Helpdesk.</p>
+            </div>
+            <div class="glass-card p-4 rounded-xl text-center">
+                <i class="fa-solid fa-users text-cyan-400 text-2xl mb-2"></i>
+                <h5 class="font-bold text-sm text-white">Seamless Citizen Access</h5>
+                <p class="text-xs text-slate-400 mt-1">Single-window portal access for all provincial public services.</p>
+            </div>
+            <div class="glass-card p-4 rounded-xl text-center">
+                <i class="fa-solid fa-shield-halved text-emerald-400 text-2xl mb-2"></i>
+                <h5 class="font-bold text-sm text-white">In-House Governance</h5>
+                <p class="text-xs text-slate-400 mt-1">Self-sustainable ERP and cloud deployment avoiding vendor lock-in.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
